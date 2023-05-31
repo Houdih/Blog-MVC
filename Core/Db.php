@@ -36,4 +36,10 @@ class Db extends PDO
         }
         return self::$instance;
     }
+
+    public static function getTable($name)
+    {
+        $className = '\\App\\Src\\Modele\\' . ucfirst($name) . 'Modele';
+        return new $className();
+    }
 }

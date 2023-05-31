@@ -10,18 +10,12 @@ class BaseManager extends Db
      */
     protected $table;
 
-    /**
-     * @var Db Instance de notre connexion
-     */
-    protected $db;
-
 
 /****************************************** CRUD GENERIQUE ******************************************/
 
     public function findAll()
     {
-        $query = $this->requete("SELECT * FROM " . $this->table);
-        return $query->fetchAll();
+        return $this->requete("SELECT * FROM " . $this->table)->fetchAll();
     }
 
     /**

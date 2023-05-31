@@ -4,18 +4,15 @@ namespace App\Src\Modele;
 
 use App\Core\BaseForm;
 use App\Core\BaseManager;
-use App\Core\Db;
 use App\Src\Entite\User;
 
 class UserModele extends BaseManager
 {
     protected $table;
-    protected $db;
 
     public function __construct()
     {
         $this->table = 'user';
-        $this->db = Db::getInstance();
     }
 
     /**
