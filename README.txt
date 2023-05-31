@@ -1,4 +1,4 @@
-Partie BackEnd, Projet de fin d'année à Metz Numeric School c'est pourquoi la documentation 
+Projet de fin d'année à Metz Numeric School c'est pourquoi la documentation 
 est en francais et le reste (classes, methodes, attributs...) est en anglais.
 
 Application web en PHP (Objet) avec le pattern MVC (Modele View Controller).
